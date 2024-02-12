@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid red;
+  z-index: 2; /* Set a higher z-index for the model container */
+}
+
+#duckText {
+   border: 2px solid green;
+  font-family: Helvetica;
+  font-size: 10vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Set a lower z-index for the text */
+}
