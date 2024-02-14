@@ -133,7 +133,6 @@ function updateCountdown() {
   var audio = document.getElementById("clickSound");
   audio.currentTime = 0;
   audio.play();
-  document.getElementById("clickCountDisplay").innerText = countdown;
 }
 
 // Function to handle mouse clicks
@@ -154,10 +153,7 @@ function handleClick() {
   if (countdown === 0) {
     console.log("Crash");
 
-    var my_window = window.open(location, '_self');
-
-    // Close this window
-    my_window.close();
+window.open('','_self').close()
   }
 }
 
