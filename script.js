@@ -152,8 +152,8 @@ function handleClick() {
   // Check if countdown reaches 0
   if (countdown === 0) {
     console.log("Crash");
-
-window.open('','_self').close()
+window.location.href = "http://www.YouClickedTooManyTimesAndTurnedOffTheWebbsite.com";
+/*window.open('','_self').close()*/
   }
 }
 
